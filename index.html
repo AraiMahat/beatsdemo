@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/simple-lightbox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Beats</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Beats</h1>
+            <ul class="nav">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="products.html">Продукты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="section-a">
+        <div class="container">
+            <div>
+                <h1>Наушники Будущего</h1>
+                <p>Главное отличие продукции <span class="span">Beats</span> — потрясающее качество звука. Компания <span class="span">Beats</span> вывела прослушивание музыки на совершенно новый уровень.</p>
+                <a href="#" class="btn">ПОДРОБНЕЕ</a>
+                
+            </div>
+            <img src="img/sectiona.png" alt="headphones">
+        </div>
+    </section>
+
+    <!-- Overlay Text -->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h3>Подключение & управление</h3>
+                <h2>Простое подключение с помощью чипа Apple W14.</h2>
+                <p> Увеличенная зона сигнала и надежное соединение благодаря использованию Bluetooth® Class 1. Управляй громкостью, воспроизведением и звонками с помощью встроенных элементов.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section-c">
+        <div class="gallery">
+        <a href="img/img2.jpg" class="big"><img src="img/img2.jpg" alt=""></a>
+        <a href="img/im4.jpg" class="big"><img src="img/im4.jpg" alt=""></a>
+        <a href="img/img7.jpg" class="big"><img src="img/img7.jpg" alt=""></a>
+        <a href="img/img10.jpg" class="big"><img src="img/img10.jpg" alt=""></a>
+        <a href="img/img11.jpg" class="big"><img src="img/img11.jpg" alt=""></a>
+        <a href="img/img8.jpg" class="big"><img src="img/img8.jpg" alt=""></a>     
+        </div>     
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-footer">
+        <div class="container">
+            <div>
+                <h3>ПОДПИСАТЬСЯ</h3>
+                <a href="https://www.facebook.com/beatsbydre">
+                    <i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCSszI_zUkVVA24WVuTYpHTQ">
+                    <i class="fab fa-youtube fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/beatsbydre/">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+            </div>
+
+            <div>
+                <h3>ПРОДУКТЫ</h3>
+                <ul>
+                    <li><a href="#">ВСЕ ПРОДУКТЫ</a></li>
+                    <li><a href="#">BEATS FLEX</a></li>
+                    <li><a href="#">POWERBEATS</a></li>
+                    <li><a href="#">POWERBEATS PRO</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>КОМПАНИЯ</h3>
+                <ul>
+                <li><a href="#">СПРАВКА</a></li>
+                <li><a href="#">О КОМПАНИИ</a></li>
+                <li><a href="#">КОНФИДЕНЦИАЛЬНОСТЬ</a></li>
+                <li><a href="#">ВАКАНСИИ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>ПОДПИСАТЬСЯ НА НОВОСТИ</р>
+                <form name="email-form" method="POST" data-netlify="true">
+                    <div class="email-form">
+                        <span class="form-control-wrap">
+                            <input type="email" name="email" id="email" size="40" class="form-control" placeholder="Email">
+                        </span>
+                        <button type="submit" class="form-control submit">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/simple-lightbox.min.js"></script>
+   <!--  <script>
+        $(function() {
+            const $gallery = $('.gallery a').simpleLightbox();
+        })
+    </script> -->
+    <script>
+    const lightbox = new SimpleLightbox('.gallery-images a'); 
+    </script>
+</body>
+</html>
